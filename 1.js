@@ -1,15 +1,15 @@
 db.createCollection("Product_categories")
-db.Product_categories.insertMany([
-  {_id: 1, name: "DVRs", number: 1},
-  {_id: 2, name: "HD Android TV Boxes", number: 8},
-  {_id: 3, name: "Android TV Box HD controls", number: 4},
-  {_id: 4, name: "Android TV Box HD Keyboards", number: 4},
-  {_id: 5, name: "Android TV Box HD Airshow Mouse", number: 5},
-  {_id: 6, name: "Vacuum cleaners", number: 1},
-  {_id: 7, name: "Lights", number: 2},
-  {_id: 8, name: "IP cameras", number: 1},
-  {_id: 9, name: "Scams IP cameras", number: 2},
-  {_id: 10, name: "USB Flash", number: 2}])
+db.Product_categories.insert(
+  {_id: 1, name: "DVRs", number: 1})
+ db.Product_categories.insert({_id: 2, name: "HD Android TV Boxes", number: 8})
+ db.Product_categories.insert({_id: 3, name: "Android TV Box HD controls", number: 4})
+ db.Product_categories.insert({_id: 4, name: "Android TV Box HD Keyboards", number: 4})
+ db.Product_categories.insert({_id: 5, name: "Android TV Box HD Airshow Mouse", number: 5})
+ db.Product_categories.insert({_id: 6, name: "Vacuum cleaners", number: 1})
+ db.Product_categories.insert({_id: 7, name: "Lights", number: 2})
+ db.Product_categories.insert({_id: 8, name: "IP cameras", number: 1})
+ db.Product_categories.insert({_id: 9, name: "Scams IP cameras", number: 2})
+ db.Product_categories.insert({_id: 10, name: "USB Flash", number: 2})
 db.createCollection("Product_list")
 db.Product_list.insert({_id: 12220, full_name: "Car DVD-E-ACE Mirror, 4.3 inch display, Full HD, MicroSD (up to 32GB), Motion Detector, IR backlight", price_grn: 750.00, wholesale_price_grn: 601.00, "prod_cat": {"$ref": "Product_categories", "$id": "1"}})
 db.Product_list.insert({_id: 11995, full_name: "TV Console R69 Allwinner 4 cores / 1GB DDR3 RAM / 8GB / Wi-Fi / HDMI 1.4 / LAN 100Mbit Smart TV Box Android 7.1", price_grn: 699.00, wholesale_price_grn: 726.00, "prod_cat": {"$ref": "Product_categories", "$id": "2"}})
